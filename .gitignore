@@ -1,0 +1,28 @@
+# Secrets and local config — never commit
+.env
+.env.*
+!.env.example
+config.local.php
+
+# The family data itself does not belong in git
+*.ged
+*.csv
+/data/
+/backups/
+/uploads/
+
+# Dependencies and build output
+/vendor/
+/node_modules/
+/public/build/
+
+# Editors and OS noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+/logs/
